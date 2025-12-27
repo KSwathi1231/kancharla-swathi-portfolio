@@ -19,4 +19,10 @@ function sendWhatsAppMessage(event) {
   const whatsappURL = `https://wa.me/${phoneNumber}?text=${text}`;
 
   window.open(whatsappURL, "_blank");
+  const toggle = document.getElementById("menu-toggle");
+const navbar = document.querySelector(".navbar");
+
+toggle.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+});
 }
